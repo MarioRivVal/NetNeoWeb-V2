@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+          <title>NetNeo &mdash; Web & Softwares</title>
+          <script>
+               window.onload = function () {
+                    const userLanguage =
+                         navigator.language || navigator.userLanguage;
+
+                    const languageCode = userLanguage.split("-")[0];
+
+                    const languagePages = {
+                         en: "en.html",
+                         es: "es.html",
+                         it: "it.html",
+                    };
+
+                    window.location = languagePages[languageCode] || "en.html";
+               };
+          </script>
+     </head>
+     <body></body>
+</html>
