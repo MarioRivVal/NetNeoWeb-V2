@@ -1,23 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
      <head>
+          <meta charset="UTF-8" />
+          <meta
+               name="viewport"
+               content="width=device-width, initial-scale=1.0"
+          />
+          <link rel="stylesheet" href="css/style.css" />
+          <link rel="icon" href="img/logos/favicon.png" type="image/png" />
           <title>NetNeo &mdash; Web & Softwares</title>
+     </head>
+     <body>
           <script>
-               window.onload = function () {
-                    const userLanguage =
-                         navigator.language || navigator.userLanguage;
+               function loadLanguage() {
+                    var userLanguage = navigator.language.substr(0, 2);
 
-                    const languageCode = userLanguage.split("-")[0];
-
-                    const languagePages = {
+                    var languageMap = {
                          en: "en.html",
-                         es: "es.html",
                          it: "it.html",
+                         es: "es.html",
                     };
 
-                    window.location = languagePages[languageCode] || "en.html";
-               };
+                    var languageURL = languageMap[userLanguage];
+                    if (languageURL) {
+                         window.location.href = languageURL;
+                    } else {
+                         window.location.href = "en/index.html";
+                    }
+               }
+
+               window.onload = loadLanguage;
           </script>
-     </head>
-     <body></body>
+     </body>
 </html>

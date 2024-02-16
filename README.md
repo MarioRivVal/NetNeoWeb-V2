@@ -1,4 +1,4 @@
-# Portoflio
+# Portfolio
 
 This is the second version of my [portfolio](https://www.netneoweb.com/ "portfolio"), with the first version available [here](https://github.com/MarioRivVal/NetNeoWeb-V1 "here")
 

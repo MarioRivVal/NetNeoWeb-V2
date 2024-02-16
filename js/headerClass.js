@@ -117,7 +117,7 @@ class Nav {
      init() {
           this.eventHandlerSectionScroll();
           this.showDevImage();
-          this.observeNavBar();
+          // this.observeNavBar();
           this.toggleArrowIcon();
      }
 }
